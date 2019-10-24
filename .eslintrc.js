@@ -17,7 +17,9 @@ module.exports = {
     sourceType: "module"
   },
   plugins: ["react", "prettier"],
+
   rules: {
+    "react/state-in-constructor": "off",
     "prettier/prettier": "error",
     "react/jsx-filename-extension": [
       "warn",
