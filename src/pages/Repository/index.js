@@ -3,7 +3,18 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import api from '../../services/api';
 
-import { Loading, Owner, IssueList } from './styles';
+import {
+  Loading,
+  Owner,
+  IssueList,
+  Prev,
+  Next,
+  ContainerButtons,
+  All,
+  Open,
+  Closed,
+  ContainerState,
+} from './styles';
 import Container from '../../components/Container';
 
 export default class Repository extends Component {
@@ -61,6 +72,12 @@ export default class Repository extends Component {
         </Owner>
 
         <IssueList>
+          <ContainerState>
+            <All> Todas as Issues </All>
+            <Open> Abertas </Open>
+            <Closed>Fechadas</Closed>
+          </ContainerState>
+
           {issues.map(issue => (
             <li key={String(issue.id)}>
               <img src={issue.user.avatar_url} alt={issue.user.login} />
@@ -82,6 +99,10 @@ export default class Repository extends Component {
             </li>
           ))}
         </IssueList>
+        <ContainerButtons>
+          <Prev> Página Anterior </Prev>
+          <Next>Próxima Página</Next>
+        </ContainerButtons>
       </Container>
     );
   }

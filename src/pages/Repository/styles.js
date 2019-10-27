@@ -115,3 +115,94 @@ export const IssueList = styled.ul`
     }
   }
 `;
+export const ContainerButtons = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+`;
+
+export const Prev = styled.button`
+  padding: 5px;
+  color: #7159c1;
+  font-weight: bold;
+  border: 1px solid #7159c1;
+  &:hover {
+    color: #fff;
+    background-color: #7159c1;
+  }
+  &:active {
+    background-color: #9370db;
+    border: 1px solid #9370db;
+  }
+`;
+export const Next = styled.button`
+  color: #7159c1;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid #7159c1;
+  &:hover {
+    color: #fff;
+    background-color: #7159c1;
+  }
+  &:active {
+    background-color: #9370db;
+    border: 1px solid #9370db;
+  }
+`;
+
+export const ContainerState = styled.div`
+  display: flex;
+  margin-bottom: 10px;
+`;
+
+export const All = styled.button`
+  color: #7159c1;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid #7159c1;
+  border-radius: 5px;
+  margin-right: 10px;
+  &:hover {
+    color: #fff;
+    background-color: #7159c1;
+  }
+  &:active {
+    background-color: #9370db;
+    border: 1px solid #9370db;
+  }
+`;
+
+export const Open = styled.button`
+  color: #7159c1;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid #7159c1;
+  margin-right: 10px;
+  border-radius: 5px;
+
+  &:hover {
+    color: #fff;
+    background-color: #7159c1;
+  }
+  &:active {
+    background-color: #9370db;
+    border: 1px solid #9370db;
+  }
+`;
+
+export const Closed = styled.button`
+  color: #7159c1;
+  padding: 5px;
+  font-weight: bold;
+  border: 1px solid #7159c1;
+  border-radius: 5px;
+
+  &:hover {
+    color: #fff;
+    background-color: #7159c1;
+  }
+  &:active {
+    background-color: #9370db;
+    border: 1px solid #9370db;
+  }
+`;
